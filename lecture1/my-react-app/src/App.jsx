@@ -69,7 +69,6 @@ function App() {
               <Chip
                 key={tag}
                 label={tag}
-                size={{ xs: 'small', sm: 'medium' }}
                 sx={{ m: 0.5 }}
                 color="primary"
                 variant="outlined"
