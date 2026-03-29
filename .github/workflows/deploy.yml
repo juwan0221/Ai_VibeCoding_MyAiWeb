@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         working-directory: lecture1/my-react-app
       - name: Build
         run: npm run build
