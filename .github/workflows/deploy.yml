@@ -26,15 +26,20 @@ jobs:
       - name: Install dependencies
         run: npm install
         working-directory: lecture1/my-react-app
-      - name: Build
+      - name: Build React Portfolio
         run: npm run build
         working-directory: lecture1/my-react-app
+      - name: Create deployment structure
+        run: |
+          mkdir -p deploy/portfolio
+          cp index.html deploy/
+          cp -r lecture1/my-react-app/dist/* deploy/portfolio/
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'lecture1/my-react-app/dist'
+          path: 'deploy'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

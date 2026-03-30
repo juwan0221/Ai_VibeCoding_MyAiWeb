@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter basename="/Ai_VibeCoding_MyAiWeb/">
+      <BrowserRouter basename="/Ai_VibeCoding_MyAiWeb/portfolio/">
         <App />
       </BrowserRouter>
     </ThemeProvider>
